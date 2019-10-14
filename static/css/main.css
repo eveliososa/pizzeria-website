@@ -1,0 +1,524 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html {padding: 0; margin: 0;}
+.clearfix:before, .clearfix:after { content: " "; display: block; }
+.clearfix:after { clear: both; }
+
+/* NAV SECTION */
+header{
+    display: table;
+    text-align: center;
+    height: 20vw;
+    width: 100%;
+    background-color: #ffbd4a;
+}
+.header-order{
+    width: 28vw;
+    display: none;
+    text-align: center;
+    vertical-align: middle;
+}
+.header-phone{
+    width: 28vw;
+    color: #F9F9F9;
+    font-family: "Avenir-Medium", Palatino, serif;
+    font-size: 2.5vw;
+    display: none;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    text-decoration-color: none;
+    text-decoration-style: none;
+    text-transform: none;
+}
+#business-name{
+    width: 100vw;
+    font-family: "Leckerli One", "Palatino LT STD", serif;
+    color: #730000;
+    font-weight: bolder;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 9vw;
+    text-shadow: .6vw .6vw .6vw rgba(0, 0, 0,0.45), .6vw .6vw .6vw rgba(0, 0, 0,0.45);
+}
+#navigation-bar{ background-color:#ffbd4a; }
+.mobile-removable{ display:none; }
+.tabs{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.tabs nav{ text-align: center; }
+.tabs nav ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: inline-block;
+}
+.tabs nav ul li{
+    border: .65vw solid  #DFA541;
+    border-bottom: none;
+    margin: 0px .75vw;
+    display: block;
+    float: left;
+    position: relative;
+    background-color: #FFCE77;
+}
+.tabs nav li.tab-current{
+    border: .85vw solid #730000;
+    border-bottom: none;
+    z-index: 100;
+}
+.tabs nav li.tab-current:before,
+.tabs nav li.tab-current:after{
+    content: '';
+    position: absolute;
+    height: .8vw;
+    right: 100%;
+    bottom: 0px;
+    width: 1000px;
+    background: #730000;
+}
+.tabs nav li.tab-current:after{
+    right: auto;
+    left: 100%;
+    width: 4000px;
+}
+.tabs nav a{
+    color: #730000;
+    font-family: "Avenir-Medium", Palatino, serif;
+    display: block;
+    font-size: 7vw;
+    line-height: 1.75;
+    padding: 0px 2.5vw;
+}
+.tabs nav a:hover{ color: #506870; }
+.tabs nav li.tab-current a{
+    color: #163540;
+    font-weight: bolder;
+    background-color: #ffefd2;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+.content section {
+    display: none;
+    background-color: #FFEFD2;
+    padding: 0px;
+    margin: 0px;
+}
+.content section:before,
+.content section:after{
+    content: '';
+    display: block;
+}
+.content section:after{ clear: both; }
+.no-js .content section{ display: block; }
+.content section.content-current{ display: block; }
+.fas, .fab{ margin-right: 0vw; }
+#section-4, #section-1, #section-2, #section-3, #section-5{
+    padding: 4vw 0;
+    margin-top:-1vw;
+}
+
+
+/* HOME SECTION */
+.specials-holder{
+    text-align: center;
+    width: 98vw;
+    margin: 5vw 2vw 5vw 2vw;
+    display: flex;
+    flex-direction: row;
+}
+.special-one, .special-two, .special-three{
+    border-radius: 50%;
+    display: block;
+    height: 28vw;
+    position: relative;
+    width: 28vw;
+    margin: 2vw;
+    opacity: .9;
+    box-shadow: 0px 1.75vw 3.5vw rgba(0,0,0,0.25), 0px 1.25vw 1.25vw rgba(0,0,0,0.22);
+}
+.special-one{ background: #730000; }
+.special-two{ background: #650000; }
+.special-three{ background: #560000; }
+.specials-text-size, .specials-text-toppings, .specials-text-item{
+    font-family: "Avenir-Medium", Palatino, serif;
+    color: #DFDFDF;
+}
+.specials-text-size{
+    font-weight: bolder;
+    font-size: 4.5vw;
+    margin: 3vw 0px 0px 0px;
+    padding: 0px;
+
+}
+.specials-text-toppings{
+    font-size: 4vw;
+    margin: -1.25vw 0vw;
+    padding: 0px;
+}
+.specials-text-item{
+    font-size: 4.25vw;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bolder;
+}
+.price-circle{ display: block; }
+.specials-price-text{
+    font-family: "Avenir-Medium", Palatino, serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 7vw;
+    margin-top: 0px;
+}
+.home-image-footer{
+    width: 100vw;
+    margin-bottom: -5vw;
+}
+.home-ordering-button{
+    margin: 3vw 0px;
+    text-align: center;
+}
+
+/* MENU SECTION */
+.full-menu{ display:none; }
+.mini-menu{
+    width: 100%;
+    display: block;
+    width: 90%;
+    margin: 0px 5% 5% 5%;
+    box-shadow: 0px 3.5vw 5vw rgba(0,0,0,.3);
+}
+
+/*  DEALS PAGE */
+.deals-paragraph{
+    font-family: "Avenir-Medium", Palatino, serif;
+    font-size: 4.75vw;
+    color: #163540;
+    text-align: center;
+    font-weight: bolder;
+}
+.deals-order{ text-align: center; }
+
+/* GALLERY PAGE */
+.gallery{
+    width: 90vw;
+    margin: 0px 3vw;
+    padding: 1vw;
+    background: #f7f7f7;
+    box-shadow: 0px 2vw 4vw rgba(0,0,0,.3);
+}
+.gallery > div{
+    position: relative;
+    float: left;
+    padding: 1vw;
+}
+.gallery > div > img{
+    box-shadow: 0px .5vw 1vw rgba(0,0,0,.3);
+    display: block;
+    width: 42vw;
+    transition: .35s transform;
+    transform: translateZ(0); /* hack */
+}
+.gallery > div:hover { z-index: 1; }
+.gallery > div:hover > img {
+    transform: scale(1.3,1.3);
+    transition: .35s transform;
+}
+.cf:before, .cf:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.cf:after { clear: both; }
+
+/* LOCATION SECTION */
+.card-container{
+    text-align: center;
+    width: 75vw;
+    margin: 5vw 12.5vw;
+    display: flex;
+    flex-direction: column;
+}
+.card1{
+    background: #f7f7f7;
+    display: block;
+    height: 35vw;
+    position: relative;
+    width: 75vw;
+    margin: -2vw 0px 5vw 0px;
+}
+.card2{
+    background: #f7f7f7;
+    display: block;
+    height: 40vw;
+    position: relative;
+    width: 75vw;
+    margin: 0px 0px 5vw 0px;
+}
+.card-1{
+    box-shadow: 0px 2vw 4vw rgba(0,0,0,0.25), 0px 2vw 2vw rgba(0,0,0,0.22);
+    opacity: .9;
+}
+.google-map{
+    width: 100vw;
+    margin: 0px 0px -5vw 0px;
+    height: 50vw;
+    box-shadow: 0px .875vw 1.75vw rgba(0,0,0,0.25), 0px .625vw .625vw rgba(0,0,0,0.22);
+}
+.container-titles{
+    color: #730000;
+    font-family: "Avenir-Medium", Palatino, serif;
+    font-size: 6vw;
+    padding: 0px;
+    margin: 1vw 0px .5vw 0px;
+    font-weight: bolder;
+}
+.address{
+    font-family: "Avenir-Medium", Palatino, serif;
+    font-size: 4vw;
+    padding: 0px;
+    margin: -1vw 0px 0px 0px;
+}
+.days{
+    font-family: "Avenir-Medium", Palatino, serif;
+    font-size: 4vw;
+    font-weight: bolder;
+    padding: 0px;
+    margin: -1vw 0px 0px 0px;
+}
+.hours{
+    font-family: "Avenir-Medium", Palatino, serif;
+    font-size: 3.5vw;
+    padding: 0px;
+    margin: -.5vw 0px 1vw 0px;
+}
+.phone{
+    font-family: "Avenir-Medium", Palatino, serif;
+    font-size: 7vw;
+    font-weight: bolder;
+    padding: 0px;
+    margin: 1.5vw 0px 0px 0px;
+    text-decoration: none;
+    text-transform: none;
+    text-decoration-color: none
+    color: black;
+}
+
+/* FOOTER SECTION */
+footer{
+    height: 15vw;
+    width: 100%;
+    background-color: #163540;
+    display: table;
+}
+.footer-middle{
+    width: 30vw;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Avenir-Medium", Palatino, serif;
+    color: #f9f9f9;
+    font-size: 2.85vw;
+}
+.footer-left{
+    width:35vw;
+    display:table-cell;
+}
+.footer-right{
+    width: 35vw;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.fa:hover{ opacity: 0.7; }
+.fa-facebook{
+    color: #3b5998;
+    font-size: 6vw;
+    text-decoration: none;
+}
+.fa-instagram{
+    color: #f9f9f9;
+    font-size: 6vw;
+    text-decoration: none;
+    margin-left: 1vw;
+}
+.fa-yelp {
+    margin-left: 1vw;
+    font-size: 6vw;
+    color: #c41200;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 480px) {
+    /* NAV SECTION */
+    header{ height: 12.5vw; }
+    .header-order{ display:table-cell; }
+    .header-phone{ display:table-cell; }
+    #business-name{
+        width: 44vw;
+        font-size: 5vw;
+        text-shadow: .15vw .15vw .15vw rgba(0, 0, 0,0.45), .15vw .15vw .15vw rgba(0, 0, 0,0.45);
+    }
+    .home-ordering-button{ display:none; }
+    .mobile-removable{ display:inline-block; }
+    .tabs nav ul li {
+        border: .2vw solid #DFA541;
+        display: block;
+    }
+    .tabs nav li.tab-current {
+        border: .3vw solid #730000;
+        border-bottom: none;
+        z-index: 100;
+    }
+    .tabs nav li.tab-current:before,
+    .tabs nav li.tab-current:after { height: .30vw; }
+    .tabs nav a {
+        font-size: 2vw;
+        line-height: 2.5;
+        padding: 0px 3vw;
+    }
+    .content section:after { clear: both; }
+    .no-js .content section { display: block; }
+    .content section.content-current { display: block;}
+    .fas, .fab{ margin-right: 1vw; }
+    #section-4, #section-1, #section-2, #section-3, #section-5{
+        padding: 5vw 0;
+        margin-top:-.5vw;
+    }
+
+    /* HOME SECTION */
+    .specials-holder{
+        text-align: center;
+        height: 25vw;
+        width: 60vw;
+        margin: 3vw 20vw 3vw 20vw;
+        display: flex;
+        flex-direction: row;
+    }
+    .special-one, .special-two, .special-three{
+        border-radius: 3vw;
+        display: block;
+        height: 25vw;
+        position: relative;
+        width: 16vw;
+        margin: 0px 2vw;
+        box-shadow: 0px 1.75vw 3.5vw rgba(0,0,0,0.25), 0px 1.25vw 1.25vw rgba(0,0,0,0.22);
+    }
+    .special-one{ background: #730000;}
+    .special-two{ background: #650000; }
+    .special-three{ background: #560000; }
+    .specials-text-size, .specials-text-toppings, .specials-text-item{
+        font-family: "Avenir-Medium", Palatino, serif;
+        color: #DFDFDF;
+    }
+    .specials-text-size{
+        font-weight: bolder;
+        font-size: 2.75vw;
+        margin: 3vw 0px 0px 0px;
+        padding: 0px;
+    }
+    .specials-text-toppings{
+        font-size: 2.25vw;
+        margin: 0px;
+        padding: 0px;
+    }
+    .specials-text-item{
+        font-size: 2.5vw;
+        margin: 0px;
+        padding: 0px;
+        font-weight: bolder;
+    }
+    .price-circle{
+        display: block;
+        background-color: #163530;
+        height: 10vw;
+        width: 10vw;
+        border-radius: 50%;
+        margin: 0vw 3vw 0px 3vw;
+    }
+    .specials-price-text{
+        font-family: "Avenir-Medium", Palatino, serif;
+        color: white;
+        font-weight: bolder;
+        font-size: 6vw;
+        padding-top: .75vw;
+    }
+    .home-image-footer{
+        width: 80vw;
+        margin: 0px 10vw -6vw 10vw;
+    }
+
+    /* MENU SECTION */
+    .full-menu{
+        display: block;
+        width: 90%;
+        margin: 0px 5%;
+    }
+    .mini-menu{ display: none; }
+
+    /*DEALS SECTION*/
+    .deals-paragraph{ font-size: 3vw; }
+    .deals-order{ text-align: center; }
+
+    /* GALLERY SECTION */
+    .gallery {
+        width: 80vw;
+        margin: 0 10vw;
+    }
+    .gallery > div > img { width: 24vw; }
+    .gallery > div:hover { z-index: 1; }
+    .gallery > div:hover > img { transform: scale(1.7,1.7); }
+    .cf:after { clear: both; }
+
+    /* LOCATION SECTION */
+    .card-container{
+        height: 25vw;
+        width: 60vw;
+        margin: 2.5vw 20vw;
+        flex-direction: row;
+    }
+    .card1{
+        height: 25vw;
+        width: 28vw;
+        margin: 0px 1vw;
+    }
+    .card2{
+        height: 25vw;
+        width: 28vw;
+        margin: 0px 1vw;
+    }
+    .card-1 { box-shadow: 0px 1.75vw 3.5vw rgba(0,0,0,0.25), 0px 1.25vw 1.25vw rgba(0,0,0,0.22); }
+    .google-map{
+        width: 90vw;
+        margin: 0px 5vw;
+        height: 30vw;
+    }
+    .container-titles{
+        font-size: 2.5vw;
+        margin: 3vw 0px 1vw 0px;
+    }
+    .address{
+        font-size: 2vw;
+        margin: .5vw 0px .5vw 0px;
+    }
+    .days{
+        font-size: 1.5vw;
+        margin: .25vw 0px 0px 0px;
+    }
+    .hours{
+        font-size: 1.5vw;
+        margin: 0vw 0px .5vw 0px;
+    }
+    .phone{ font-size: 3vw; }
+
+    /* FOOTER SECTION */
+    footer{ height:10vw; }
+    .footer-middle{ font-size: 1.5vw; }
+    .fa-facebook{ font-size: 4vw; }
+    .fa-instagram{ font-size: 4vw; }
+    .fa-yelp { font-size: 4vw;}
+}
